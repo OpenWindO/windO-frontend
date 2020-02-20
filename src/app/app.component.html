@@ -1,0 +1,51 @@
+<!-- <mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <app-sidenav-list (closeSideNav)="sidenav.close()"></app-sidenav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="main">
+      <div id="left" class="column">
+        <div class="top-left"> 
+          <a href="#">
+            <img src="/assets/img.png" alt="logo" width="89" height="29" />
+          </a> 
+        </div>
+        <div class="bottom">
+          <app-sidenav-list></app-sidenav-list>
+        </div>
+      </div>
+      <div id="right" class="column">
+        <div class="top-right">
+          <app-header></app-header>
+        </div>
+        <div class="bottom">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+
+    <div className="footer">footer</div>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <app-sidenav-list (closeSideNav)="sidenav.close()"></app-sidenav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-header (sideNavToggle)="sidenav.toggle()"></app-header>
+    <app-main></app-main>
+    <section>
+      <mat-toolbar fxFlex fxLayoutAlign="center">
+        <span style="font-size: 10px">
+          © {{ currentDate | date: 'yyyy'}} Windo
+        </span>
+      </mat-toolbar>
+    </section>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<ngx-spinner color="#fff" size="medium" type="ball-spin-clockwise">
+  <p style="font-size: 20px; color: white">{{ spinnerText }}</p>
+</ngx-spinner>

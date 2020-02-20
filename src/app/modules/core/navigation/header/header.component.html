@@ -1,0 +1,54 @@
+<!-- <div class="top-right">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSideNav()">
+      <mat-icon class="white-icon">menu</mat-icon>
+    </button>
+  </div>
+  <ul>
+    <li>
+    <a href="#" className="relative">
+      <i className="fas fa-cloud"></i>
+      <span className="badge badge-danger">5</span>
+    </a>
+    </li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">abc</a></li>
+    <li><a href="#">xyz</a></li>
+    <li><a href="#">cdf</a></li>
+  </ul>
+</div> -->
+
+<header class="main-header">
+  <div class="main-header-content">
+    <div class="header-left">
+      <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSideNav()">
+          <mat-icon class="white-icon">menu</mat-icon>
+        </button>
+      </div>
+      <a href="#" class="logo">
+        <img src="/assets/img.png" alt="logo" width="89" height="29" />
+      </a> 
+
+      <div fxHide.xs>
+        <button mat-icon-button (click)="onToggleSideNavDesktopMode()">
+          <mat-icon class="white-icon">menu</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="header-right">
+      <ul>
+        <li>
+        <a href="#" class="relative">
+          <mat-icon class="icon">input</mat-icon>
+          <span class="badge badge-danger">5</span>
+        </a>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">abc</a></li>
+        <li><a href="#">xyz</a></li>
+        <li><a href="#">cdf</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
